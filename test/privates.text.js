@@ -6,6 +6,7 @@ assert = require('assert');
 
 module.exports = {
 
+  // getEntity()
   'getEntity: null': function () {
     assert.equal(null, getEntity('foobar'));
   },
@@ -26,6 +27,8 @@ module.exports = {
     assert.equal(null, getEntity('01& #8482 ;34'));
   },
 
+
+  // getTag()
   'getTag: null': function () {
     assert.equal(null, getTag('foobar'));
   },
@@ -60,6 +63,7 @@ module.exports = {
   },
 */
 
+  // getNext()
   'getNext: 0': function () {
     assert.deepEqual({word: 'a', incr: 1}, getNext('abc', p.COUNT_AS_ONE, p.COUNT_AS_ONE));
   },
