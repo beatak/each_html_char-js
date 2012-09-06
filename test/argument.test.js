@@ -1,21 +1,11 @@
-var iterate = require('../lib/eachhtmlchar.js').iterate,
+var process = require('../lib/eachhtmlchar.js').process,
 assert = require('assert');
 
 module.exports = {
   'no arguments': function () {
     assert.throws(
       function () {
-        iterate();
-      },
-      Error,
-      'should throw an error'
-    );
-  },
-
-  '1 arguments': function () {
-    assert.throws(
-      function () {
-        iterate('foo');
+        process();
       },
       Error,
       'should throw an error'
@@ -25,17 +15,7 @@ module.exports = {
   '2 arguments, wrong type on 1st': function () {
     assert.throws(
       function () {
-        iterate(null, function (){});
-      },
-      Error,
-      'should throw an error'
-    );
-  },
-
-  '2 arguments, wrong type on 2nd': function () {
-    assert.throws(
-      function () {
-        iterate('foo', 'bar');
+        process(null, function (){});
       },
       Error,
       'should throw an error'
