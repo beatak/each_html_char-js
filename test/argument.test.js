@@ -1,11 +1,11 @@
-var process = require('../lib/eachhtmlchar.js').process,
+var eachHtmlChar = require('../lib/eachhtmlchar.js').eachHtmlChar,
 assert = require('assert');
 
 module.exports = {
   'no arguments': function () {
     assert.throws(
       function () {
-        process();
+        eachHtmlChar();
       },
       Error,
       'should throw an error'
@@ -15,7 +15,7 @@ module.exports = {
   '2 arguments, wrong type on 1st': function () {
     assert.throws(
       function () {
-        process(null, function (){});
+        eachHtmlChar(null, function (){});
       },
       Error,
       'should throw an error'
