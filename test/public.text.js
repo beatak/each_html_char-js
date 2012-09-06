@@ -9,7 +9,7 @@ module.exports = {
     eachHtmlChar(
       str,
       function (index, word) {
-        console.log(index, word, i, expec[i]);
+        // console.log('test 0', index, word, i, expec[i]);
         assert.equal(expec[i], word);
         ++i;
       }
