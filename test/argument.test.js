@@ -1,4 +1,4 @@
-var eachHtmlChar = require('../lib/eachhtmlchar.js').eachHtmlChar,
+var eachHtmlChar = require('../src/eachhtmlchar.js').eachHtmlChar,
 assert = require('assert');
 
 module.exports = {

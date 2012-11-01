@@ -1,4 +1,4 @@
-var p = require('../lib/eachhtmlchar.js'),
+var p = require('../src/eachhtmlchar.js'),
 getNext = p._getNext,
 getEntity = p._getFirstAppearingEntity,
 getTag = p._getFirstAppearingTag,
