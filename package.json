@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/beatak/each_html_char-js.git"
   },
+  "bugs": {
+    "url": "https://github.com/beatak/each_html_char-js/issues"
+  },
   "keywords": [
     "html entities",
     "character"
